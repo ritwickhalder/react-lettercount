@@ -1,0 +1,50 @@
+body{background: #ecf0f1;}
+.X{
+  padding: 5px 5px 30px 5px;
+  margin: auto;
+  background: #fff;
+  max-width: 80%;
+  padding: 3%;
+  height: 450px;
+  box-shadow: 0 2px 5px rgba(0,0,0, .3);
+}
+h1,textarea,label{
+  font-family: 'Roboto', sans-serif;  
+}
+h1{
+  margin-bottom: 32px;
+  text-align: center;
+}
+label{
+  margin: 10px;
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+label span{color: red}
+textarea{
+  color: #444;
+  width: 100%;
+  resize: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 30px;
+  min-height: 160px;
+  letter-spacing: .8px;
+  height: 250px;
+  box-sizing: border-box;
+  border: 2px solid rgba(0,0,0,.12);
+}
+.bb{
+  border-top-color: rgb(51, 204, 254);
+  border-top-width: 4px;
+}
+.nn{
+  border-top-width: 4px;
+  border-top-color: rgba(0,0,0,.12);
+}
+
+.text-area {
+  background-color: rgb(234, 249, 234);
+}

@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import './style.css';
+import { useState } from 'react';
 
 function App() {
+
+  const [text, setText] = useState();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div class="X">
+        <h1>Online Letter Count Tool</h1> 
+        <label for="text"> Letter Count = <span id="count"> {text?.length ?? 0} </span></label> <br />
+        <textarea className='text-area' value={text} onChange={(e) => setText(e.target.value)} id="text" maxlength="99999999" spellcheck="false" autocomplete="off" placeholder="Type or paste text here..."></textarea>
+      </div>
     </div>
   );
 }
